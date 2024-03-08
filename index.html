@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap">
+  <title>Grace Porter Lab 4</title>
+</head>
+<body>
+  
+  <section class="hero-container">
+    <div class="hero-image">
+      <div class="hero-text">
+      <h1>Bonut Inc.</h1>
+      <p>Fancy donuts for fancy people.</p>
+      <button>Order Here</button>
+    </div>
+    </div>
+  </section>
+ 
+  <section class="colored-section">
+  <section id="content">
+    <h2>About Bonut Inc.</h2>
+    <div class="image-with-text">
+    <img src="assets/donutwithbite.jpg" alt="Pink donut with a bite taken out of it" height="350" width="500">
+    <p>
+      The shop is renowned for its signature donuts, which are meticulously crafted and change seasonally to keep things exciting. One of the favorites is the "Triple Berry Bliss," a donut filled with a luscious blend of raspberries, blueberries, and strawberries, topped with a sweet berry glaze.
+    </p> 
+    <button>Order Here</button> 
+  </div>
+  </section>
+</section>
+  
+    <button class="accordion">Lemon Curd Donut</button>
+<div class="panel">
+  <p>Our lemon curd donut is a delicious pastry featuring a golden-brown exterior with a slightly crispy texture. Its soft and fluffy interior is complemented by a burst of vibrant and zesty lemon curd filling, creating a perfect balance of sweetness and acidity. Topped with powdered sugar or lemon-flavored icing, the donut offers a delightful aroma of fresh lemon and is often enjoyed with coffee or tea for a harmonious flavor experience.</p>
+</div>
+ 
+<button class="accordion">Boston Cream Donut</button>
+<div class="panel">
+  <p>
+    Our Boston cream donut is a delectable pastry with a golden-brown exterior and a soft, pillowy texture. Its signature feature is a creamy vanilla custard filling that adds a luscious and sweet contrast to the dough. The donut is typically topped with a smooth chocolate glaze, creating a perfect harmony of flavors and textures. This classic treat offers a delightful combination of rich chocolate, velvety custard, and fluffy donut goodness.</p>
+</div>
+ 
+<button class="accordion">Cinnamon Swirl Donut</button>
+<div class="panel">
+  <p>Our cinnamon swirl donut is a delectable pastry characterized by its golden-brown exterior and soft, fluffy interior. The highlight is a generous swirl of cinnamon sugar, creating a sweet and aromatic filling throughout the donut. Topped with a light glaze or powdered sugar, the donut offers a perfect balance of warm cinnamon flavor and sweet dough. This delightful treat provides a comforting and indulgent experience for those who appreciate the classic combination of cinnamon and sugar.</p>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+  <footer>
+    <h2>Find us:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9848.748553212361!2d-114.09495251664674!3d50.999472732215324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1709847521013!5m2!1sen!2sca"
+     width="400" 
+     height="300" 
+     style="border:0;" 
+     allowfullscreen="" 
+     loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <footer id="footer">
+      <!-- Dynamic date -->
+      <p>© <span id="currentYear"></span> Bonut Inc.</p>
+
+      <!-- Links in the footer -->
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-question-circle"></i></a>
+      <a href="#"><i class="fas fa-phone"></i></a>
+  </footer>
+
+  <script>
+      // JavaScript code to update the current year dynamically
+      document.addEventListener("DOMContentLoaded", function() {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").innerHTML = currentYear;
+      });
+  </script>
+</footer>   
+</body>
+</html>

@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("herodonut.jpg");
+    height: 100%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ 
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+ 
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+ 
+.colored-section {
+    background-color: #d8dffc; 
+    padding: 20px
+}
+@media only screen and (max-width: 600px)
+  .image-with-text {
+    display: flex;
+    align-items: center;
+    text: 
+}
+
+.image-with-text img {
+    margin-right: 10px; /* Adjust the margin to create space between image and text */
+}
+
+  .accordion {
+    background-color: #aaa6ff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+ 
+  .active, .accordion:hover {
+    background-color: #c2c1fb;
+  }
+ 
+  .panel {
+    padding: 0 18px;
+    background-color: #fbefff;
+    display: none;
+    overflow: hidden;
+  }
+ 
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0e3be;
+    color: rgb(14, 0, 122);
+    text-align: center;
+  }
+
+@media only screen and (max-width: 600px)
+ {
+  img, {
+  max-width: 100%;
+  height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 600px) 
+{
+  img {
+  max-width: 100%;
+  height: auto;
+}
+ .hero-text {
+  font-size: 16px;
+
+}
+}
+@media only screen and (min-width: 768px) 
+{
+  img {
+  max-width: 100%;
+  height: auto;
+}
+}
+
+@media only screen and (min-width: 992px) 
+{
+  img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 2em; /* 2 times the base font size */
+}
+}
+
+@media only screen and (min-width: 1200px) 
+{
+  img {
+  max-width: 100%;
+  height: auto;
+}
+}
